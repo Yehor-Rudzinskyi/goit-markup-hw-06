@@ -64,6 +64,10 @@
           для вашего бизнеса
         </h1>
         <button class="main-heading-order-button">Заказать услугу</button>
+        <div class="backdrop is-hidden">
+          <div class="modal-window"></div>
+          <button>Close</button>
+        </div>
       </section>
       <!-- О нас about us -->
       <section class="about-us container">
@@ -565,13 +569,23 @@
           </ul>
         </div>
         <div class="footer-forma">
-          <b class="main-subtitle footer-subtitle">подпишитесь на рассылку</b>
-          <button class="footer-btn">
-            Подписаться
-            <svg class="footer-icon-plane" width="24px" height="24px">
-              <use href="./images/sprite.svg#icon-plane"></use>
-            </svg>
-          </button>
+          <b class="main-subtitle footer-subtitle footer-subtitle-form"
+            >подпишитесь на рассылку</b
+          >
+          <form action="#" method="">
+            <input
+              class="email-forma"
+              type="email"
+              name="user_email"
+              placeholder="E-mail"
+            />
+            <button class="footer-btn" type="submit">
+              Подписаться
+              <svg class="footer-icon-plane" width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-plane"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
