@@ -265,11 +265,6 @@ address {
   }
 }
 
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .main-heading {
   margin-top: 0;
   margin-bottom: 30px;
@@ -289,7 +284,8 @@ address {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 32px;
+  width: 200px;
+  height: 50px;
   border: none;
   border-radius: 4px;
 
@@ -821,4 +817,54 @@ address {
 
   font-size: 16px;
   line-height: 1.87;
+}
+
+/* MODAL WINDOW */
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+
+  min-width: 528px;
+  min-height: 581px;
+
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 0.87;
+
+  letter-spacing: 0.03em;
+
+  /* color: #212121; */
+}
+
+.modal-input {
+  display: block;
+  margin-top: 28px;
+  width: 448px;
+  height: 40px;
 }

@@ -63,11 +63,9 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="main-heading-order-button">Заказать услугу</button>
-        <div class="backdrop is-hidden">
-          <div class="modal-window"></div>
-          <button>Close</button>
-        </div>
+        <button class="main-heading-order-button" data-modal-open>
+          Заказать услугу
+        </button>
       </section>
       <!-- О нас about us -->
       <section class="about-us container">
@@ -589,5 +587,46 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+        <form action="">
+          <input
+            class="modal-input"
+            type="text"
+            name="user_name"
+            placeholder="Имя"
+          />
+          <input
+            class="modal-input"
+            type="tel"
+            name="user_tel"
+            placeholder="Телефон"
+          />
+          <input
+            class="modal-input"
+            type="email"
+            name="user_email"
+            placeholder="Почта"
+          />
+          <textarea
+            name="user_messege"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Комментарии"
+          >
+          </textarea>
+        </form>
+        <button
+          class="main-heading-order-button"
+          type="submit"
+          data-modal-close
+        >
+          Отправить
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
