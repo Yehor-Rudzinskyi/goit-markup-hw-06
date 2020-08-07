@@ -638,14 +638,20 @@
           <textarea
             class="modal-textarea"
             name="user_messege"
-            placeholder="Comments"
-          >
-          </textarea>
-          <label class="modal-checkbox" for=""
-            >Соглашаюсь с рассылкой и принимаю
-            <a class="modal-checkbox-link" href="">Условия договора</a>
-            <input type="checkbox"
-          /></label>
+            placeholder="Комментарий"
+          ></textarea>
+
+          <label class="modal-checkbox-label">
+            <input
+              class="modal-checkbox-input"
+              type="checkbox"
+              name="condition"
+              value="agree"
+            /><span class="checkbox-icon"></span>Соглашаюсь с рассылкой и
+            принимаю
+            <a class="modal-checkbox-link" href=""> Условия договора </a>
+          </label>
+
           <button class="main-heading-order-button" type="submit">
             Отправить
           </button>
