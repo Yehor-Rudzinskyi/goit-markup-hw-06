@@ -907,7 +907,7 @@ address {
 
 .modal-input:focus + .modal-label,
 .modal-input:not(:placeholder-shown) + .modal-label {
-  transform: translate(-33px, -35px) scale(0.85);
+  transform: translate(-33px, -38px) scale(0.9);
   color: var(--accent);
 
   /* Другой варик
